@@ -29,7 +29,7 @@ export NVM_DIR="/Users/guilherme/.nvm"
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
 #THIS MUST BE AT THE END OF THE FILE FOR JENV TO WORK!!!
-[[ -s "/Users/guilherme/.jenv/bin/jenv-init.sh" ]] && source "/Users/guilherme/.jenv/bin/jenv-init.sh" && source "/Users/guilherme/.jenv/commands/completion.sh"
+[[ -s "/Users/guilhermesousa/.jenv/bin/jenv-init.sh" ]] && source "/Users/guilhermesousa/.jenv/bin/jenv-init.sh" && source "/Users/guilhermesousa/.jenv/commands/completion.sh"
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
