@@ -6,6 +6,7 @@ unset file
 export JAVA_HOME=$(/usr/libexec/java_home)
 export MYSQL_HOME=/usr/local/mysql-5.6.14-osx10.7-x86_64
 
+export PATH=${JAVA_HOME}/bin:$PATH
 export PATH=$MYSQL_HOME/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 
