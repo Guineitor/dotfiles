@@ -3,10 +3,8 @@ for file in ~/.{bash_prompt,aliases}; do
 done
 unset file
 
-export JAVA_HOME=$(/usr/libexec/java_home)
 export MYSQL_HOME=/usr/local/mysql-5.6.14-osx10.7-x86_64
 
-export PATH=${JAVA_HOME}/bin:$PATH
 export PATH=$MYSQL_HOME/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 
@@ -34,3 +32,7 @@ export NVM_DIR="/Users/guilherme/.nvm"
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export M2_HOME=/opt/apache-maven-3.3.3
+export M2=$M2_HOME/bin
+export MAVEN_OPTS="-Xms256m -Xmx512m"
+export PATH=$M2:$PATH
