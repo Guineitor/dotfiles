@@ -1,4 +1,4 @@
-for file in ~/.{bash_prompt,aliases}; do
+	for file in ~/.{bash_prompt,aliases}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
@@ -36,3 +36,7 @@ export M2_HOME=/opt/apache-maven-3.3.3
 export M2=$M2_HOME/bin
 export MAVEN_OPTS="-Xms256m -Xmx512m"
 export PATH=$M2:$PATH
+
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
